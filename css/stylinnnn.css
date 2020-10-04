@@ -1,0 +1,39 @@
+body {
+  background-color: gainsboro;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-gap: 2em;
+  border: 4px solid black;
+}
+
+/*This line of code makes the image shrink to whatever
+size the viewport it*/
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.rule_of_thirds {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: center;
+}
+
+.contrast {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: start;
+  justify-self: center;
+}
+
+.repetition {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  justify-self: center;
+}
