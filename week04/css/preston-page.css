@@ -1,0 +1,90 @@
+/* Core Styles */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+/* Header showcase */
+
+#showcase {
+  min-height: 450px;
+  color: yellowgreen;
+  background-color: aqua;
+}
+
+/* section A Weather summary */
+#section-a {
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+  text-align: left;
+  padding-left: 1em;
+}
+
+/* section B Article*/
+#section-b {
+  padding: 2em 1em 1em;
+}
+
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* section c but in the video section d */
+
+#section-c .box {
+  padding: 1em;
+  color: #fff;
+  background: #2690d4;
+}
+
+/* Footer */
+#main-footer {
+  padding: 2em;
+  background: #000;
+  color: #fff;
+}
+
+/*Media Queries*/
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2/4;
+  }
+
+  .box {
+    grid-column: 2/4;
+  }
+}

@@ -1,0 +1,39 @@
+body {
+  width: 800px;
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: solid grey 2px;
+  width: 576px;
+  background-color: lightgray;
+}
+
+.location {
+  border: solid red 2px;
+}
+
+.hero_image {
+  border: solid orange 2px;
+}
+
+.weather_summary_box {
+  border: solid blue 2px;
+}
+
+.five_day_forcast-img_holder {
+}
+
+.article_card {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #container {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+  }
+}
