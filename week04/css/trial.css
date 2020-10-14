@@ -9,6 +9,13 @@ body img {
   height: auto;
 }
 
+.banner {
+  background: pink;
+  text-align: center;
+  color: greenyellow;
+  padding: 20px;
+}
+
 /************ Header Mobile **********/
 #header {
 }
