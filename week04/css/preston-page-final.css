@@ -106,4 +106,7 @@ p {
     grid-column: 3/5;
     text-align: center;
   }
+  .canyon {
+    max-height: 600px;
+  }
 }

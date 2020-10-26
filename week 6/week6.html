@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/week6.css" />
+    <script src="./script/index.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section id="header">
+            <div class="header-container">
+              <div class="logo">
+                <img src="images/Kairosview copy.png" />
+                <div class="title">
+                    <h3>Kairosview</h3>
+                    <p>Rain or shine <br>We are right 100% of the time</p>
+                </div>
+
+                <div class="ham">
+                    <div class="ham-line"></div>
+                    <div class="ham-line"></div>
+                    <div class="ham-line"></div>
+                </div>
+              </div>
+              <div>
+                <ul class="links navigation">
+                  <li><a href="/" class="white-link">Home test</a></li>
+                  <li><a href="/" class="white-link active">Preston</a></li>
+                  <li><a href="/" class="white-link">Sode Springs</a></li>
+                  <li><a href="/" class="white-link">Fish Haven</a></li>
+                  <li><a href="/" class="white-link">Storm Center</a></li>
+                  <li><a href="/" class="white-link">Gallery</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+      
+          <div class="banner" id="banner">free pancakes <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">click here</a></div>
+      
+        <!--Start of Hero section with weather summary -->
+        <div class="content">
+            <section class="hero">
+                <div class="hero-container">
+                    <picture class='hero-image'>
+                        <source media='(max-width: 500px)' srcset='images/hero-img500.jpg'>
+                        <source media='(max-width: 800px)' srcset='images/hero-img800.jpg'>
+                        <img src='images/hero-img1100.jpg' alt='hero-img'>
+                    </picture>
+                    <div class="weather-summary">
+                        <h3>Summary</h3>
+                        <p>Current Temp: <span id="temperature"> 71 </span></p>
+                        <p>Wind Speed: <span id="windSpeed"> 5 </span></p>
+                        <p>High Temp: 75</p>
+                        <p>Low Temp: 50</p>
+                        <p>Wind Chill: <span id="windChill"></span></p>
+                    </div>
+                </div>  
+            </section>
+    
+            <!--Start of 5 day forcast-->
+            <section class="five-day-forcast">
+                <div class="five-day-forcast-heading">
+                    <h3>Five Day Forcast</h3>
+                </div>
+                
+
+                <!--This container disappears in mobile view -->
+                <div class="forcast-container">
+                  <div class="forcast-card">Mon<img src="images/forcast.png" /></div>
+                  <div class="forcast-card">Tues<img src="images/forcast.png" /></div>
+                  <div class="forcast-card">Wed<img src="images/forcast.png" /></div>
+                  <div class="forcast-card">Thurs<img src="images/forcast.png" /></div>
+                  <div class="forcast-card">Fri<img src="images/forcast.png" /></div>
+                </div>
+            </section>
+    
+            <!--Stat of article title and photo-->
+            <section class="blog">
+                <div class="article-container">
+                    <div class="article-content">
+                        <h3>Article Title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam neque 
+                            suscipit repudiandae alias itaque architecto eveniet doloremque ad 
+                            illum fugit adipisci, necessitatibus rem. Expedita voluptates accusamus
+                            deleniti dolore amet impedit necessitatibus repellendus aliquid qui maxime!
+                            Officiis quas aliquam aut reprehenderit.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam neque 
+                            suscipit repudiandae alias itaque architecto eveniet doloremque ad 
+                            illum fugit adipisci, necessitatibus rem. Expedita voluptates accusamus
+                            deleniti dolore amet impedit necessitatibus repellendus aliquid qui maxime!
+                            Officiis quas aliquam aut reprehenderit.
+                        </p>
+                    </div>
+                    
+                    <div class="article-image">
+                        <img src="images/preston-article-image.jpg"/>
+                    </div> 
+                </div>
+                
+            </section>
+    
+    
+        </div>
+        
+
+    </main>
+    <footer>
+
+            <!--Start of Contact information-->
+            <section class="contact">
+                <div class="contact-container">
+                    <div class="contact-information">
+                        <h3>Contact Information</h3>
+                        <p>Phone: 208-867-5309</p>
+                        <p>Email: donaldtrump@maga.com</p>
+                        <p>Address: 70 W Oneida St, Preston, ID 83263</p>
+                        <div class="social"> <!-- Here is all the logos that link to social media sites-->
+                            <a href="https://www.facebook.com/">
+                            <img
+                                src="images/facebook_icon.png"
+                                alt="Facebook Logo"
+                            />
+                            </a>
+                
+                            <a href="https://www.instagram.com/">
+                            <img
+                                src="images/instagram_icon.png"
+                                alt="Instagram Logo"
+                            />
+                            </a>
+                
+                            <a href="https://www.youtube.com/">
+                            <img
+                                src="images/youtube_icon.png"
+                                alt="Youtube Logo"
+                            />
+                            </a>
+                            <a href="https://www.twitter.com/">
+                                <img
+                                    src="images/twitter_icon.png"
+                                    alt="Twitter Logo"
+                                />
+                                </a>
+                        </div>    
+                        
+                    </div>
+                    <div class="contact-map">
+                        <img class="preston-map" src="images/preston-map.jpg"></div>
+                        
+                </div>
+            </section>
+    </footer>
+    <script src="./script/windchill.js"></script>
+
+</body>
+</html>
