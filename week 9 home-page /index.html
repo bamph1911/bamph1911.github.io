@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/home.css" rel="stylesheet"/> 
+    <script src="js/what.js"></script>
+    <script src="js/ham-button.js"></script>
+    <title>Weather Home Page</title>
+</head>
+<body>
+    <main>
+        <section id="header">
+            <div class="header-container">
+              <div class="logo">
+                <img src="images/Kairosview copy.png" />
+                <div class="title">
+                    <h3>Kairosview</h3>
+                    <p>Rain or shine <br>We are right 100% of the time</p>
+                </div>
+
+                <div class="ham">
+                    <div class="ham-line"></div>
+                    <div class="ham-line"></div>
+                    <div class="ham-line"></div>
+                </div>
+              </div>
+              <div>
+                <ul class="links navigation">
+                  <li><a href="/" class="white-link active">Home</a></li>
+                  <li><a href="/" class="white-link">Preston</a></li>
+                  <li><a href="/" class="white-link">Sode Springs</a></li>
+                  <li><a href="/" class="white-link">Fish Haven</a></li>
+                  <li><a href="/" class="white-link">Storm Center</a></li>
+                  <li><a href="/" class="white-link">Gallery</a></li>
+                </ul>
+              </div>
+            </div>
+        </section>
+
+        <div class = "content">
+            <section class="hero">
+                <div class="hero-container">
+                    <div class="hero-text">
+                        <h1>Welcome to Kairosview</h1>
+                        <p>It is our goal to provide the citizens of Southeastern Idaho with up to the minute weather updates. 
+                            The weather in our little slice of heaven is prone to change at the drop of a hat. You can count on us
+                            to give you and your family the most accurate forcast, so that you can plan ahead. 
+                        </p>
+
+                        <p>In addition to weather forcasts, we also provide you with important real time
+                            <b>Coronavirus information </b>for the state of Idaho. 
+                        </p>
+
+                        <p> Part of the unique experience of living in Southeastern Idaho is our spectacular views and 
+                            many historical locations. With Kairosview you can select a specific location and get a complete weather summary about the area.
+                        </p>
+                    </div>
+                    
+                </div>  
+            </section>
+            <!--********* Town info api *************************-->
+            <div id="cards">
+            </div>
+            <!--********* Idaho Corona tracker api **************-->
+            <div id="corona-heading">
+                <h2>Coronavirus Information</h2>
+            </div>
+    
+            <div class="corona-info">
+                <div class="corona-cards">
+                    In Idaho there have been <h2><span id="positive-increase"></span></h2> 
+                    new cases today
+                    <img src="images/rsz_chart-increase.png" alt="">
+                </div>
+            
+                <div class="corona-cards">
+                    In Idaho there is currently <h2><span id="hospitalized-currently"></span></h2> 
+                    people hospitalized due to coronavirus
+                    <img src="images/rsz_hospitalized-heart.png" alt="">
+                </div>
+            
+                <div class="corona-cards">
+                    In Idaho so far <h2><span id="recovered"></span></h2> 
+                    people have recovered
+                    <img src="images/rsz_1heart-recovered.png" alt="">
+                </div>          
+            </div>
+        </div>
+
+             
+    </main>
+    <footer>
+
+        <!--************ Start of Contact information  **********************-->
+        <section class="contact">
+            <div class="contact-container">
+                <div class="contact-information">
+                    <h3>Contact Information</h3>
+                    <p>Phone: 208-867-5309</p>
+                    <p>Email: donaldtrump@maga.com</p>
+                    <p>Address: 70 W Oneida St, Preston, ID 83263</p>
+                    <div class="social"> <!-- Here is all the logos that link to social media sites-->
+                        <a href="https://www.facebook.com/">
+                        <img
+                            src="images/facebook_icon.png"
+                            alt="Facebook Logo"
+                        />
+                        </a>
+            
+                        <a href="https://www.instagram.com/">
+                        <img
+                            src="images/instagram_icon.png"
+                            alt="Instagram Logo"
+                        />
+                        </a>
+            
+                        <a href="https://www.youtube.com/">
+                        <img
+                            src="images/youtube_icon.png"
+                            alt="Youtube Logo"
+                        />
+                        </a>
+                        <a href="https://www.twitter.com/">
+                            <img
+                                src="images/twitter_icon.png"
+                                alt="Twitter Logo"
+                            />
+                            </a>
+                    </div>    
+                    
+                </div>
+                <div class="contact-map">
+                    <img class="preston-map" src="images/preston-map.jpg"></div>
+                    
+            </div>
+        </section>
+    </footer>
+    <script src="js/corona.js"></script>
+
+</body>
+</html>

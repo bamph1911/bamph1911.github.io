@@ -1,0 +1,43 @@
+body {
+  display: grid;
+  background: aqua;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+}
+
+#cards {
+  grid-template-columns: 1fr;
+  gap: 5px;
+  border: 10px dashed green;
+}
+
+#cards div {
+  border: yellow solid 3px;
+  /* display: grid; */
+
+  text-align: center;
+}
+
+#cards section :nth-child(2) {
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#cards section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  border: solid 5px purple;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+}

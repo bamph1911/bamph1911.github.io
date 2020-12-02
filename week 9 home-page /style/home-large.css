@@ -1,0 +1,45 @@
+body {
+  margin: 0 auto;
+  max-width: 1000px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  border: dashed 5px green;
+  padding: 10px;
+}
+
+#cards div {
+  border: yellow solid 3px;
+  /* display: grid; */
+  height: 17vw;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#cards section {
+  border: solid 3px purple;
+  text-align: center;
+  /* padding: 10px; */
+}
+
+#cards section img {
+  border: dashed 3px black;
+
+  justify-self: end;
+}
+
+#cards section :nth-child(2) {
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+}
+/* just passed this is the original version */
+/* dont go too far */

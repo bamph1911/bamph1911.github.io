@@ -1,0 +1,30 @@
+body {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: inline;
+}
+
+#cards {
+  border: deeppink 3px dashed;
+  display: grid;
+
+  gap: 5px;
+  text-align: center;
+}
+#cards div {
+  border: 3px solid red;
+}
+
+#cards section {
+  border: goldenrod 3px solid;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#cards section img {
+  border: green solid 3px;
+}
