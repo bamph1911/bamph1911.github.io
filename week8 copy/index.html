@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/storm_center.css"/>
+    <!-- <link rel="stylesheet" href="style/storm_center.css"/> -->
+    <title>Storm Center</title>
+</head>
+<body>
+    <main>
+        <section id="header">
+            <div class="header-container">
+              <div class="logo">
+                <img src="images/Kairosview copy.png" />
+                <div class="title">
+                    <h3>Kairosview</h3>
+                    <p>Rain or shine <br><i>We are right 100% of the time</i></p>
+                </div>
+
+                <div class="ham">
+                    <div class="ham-line"></div>
+                    <div class="ham-line"></div>
+                    <div class="ham-line"></div>
+                </div>
+              </div>
+              <div>
+                <ul class="links navigation">
+                  <li><a href="/" class="white-link">Home test</a></li>
+                  <li><a href="/" class="white-link">Preston</a></li>
+                  <li><a href="/" class="white-link">Soda Springs</a></li>
+                  <li><a href="/" class="white-link">Fish Haven</a></li>
+                  <li><a href="/" class="white-link active">Storm Center</a></li>
+                  <li><a href="/" class="white-link">Gallery</a></li>
+                </ul>
+              </div>
+            </div>
+        </section>
+        
+        <div class="content">
+       
+            <form action="thanks.html">
+                
+                <!-- Here is the personal information spot of the form -->
+                <div class="form-content">
+                    <div class="personal-info">
+                        <h4>Personal Information</h4>
+                        <label for="full-name">Full Name</label>
+                        <input type="text"  id="full-name" name="Full Name" placeholder="Full Name"
+                        pattern="[A-Z a-z]+" minlength="5" required>
+                    </div>
+    
+                    <div class="personal-info">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="Email" minlength="5" placeholder="example@email.com">
+                    </div>
+    
+                    <div class="personal-info">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel"  id="phone-number" name="Phone Number" minlength="5" placeholder="Phone Number" required>
+                    </div>
+    
+                    <div class="personal-info">
+                        <label for="zip">Zip Code</label>
+                        <input type="number" id="zip" minlength="5" name="Zip Code" placeholder="Zip Code" maxlength="5"
+                            pattern="[0-9]" required>
+                    </div>
+    
+                </div>
+    
+    
+    
+                <!-- Here is the storm info spot of the form -->
+    
+    
+                <div class="storm-info">
+                    <h4>Storm Information</h4>
+                    <label for="storm-date">Storm Date</label>
+                    <input type="date" id="storm-date" name="date" required>
+                </div>
+    
+                <div class="storm-info">
+                    <label for="storm-type">Storm Type</label>
+                    <input type="text" name="Storm Type" id="storm-type" list="storm-type-list" required>
+    
+                    <datalist id="storm-type-list">
+                        <option>Hurricane</option>
+                        <option>Tornado</option>
+                        <option>Flash Flood</option>
+                        <option>Hail</option>
+                        <option>Thunderstorm</option>
+                    </datalist>
+                </div>
+
+                <!--************************** BROTHER BLAZZARDS RATING CODE **************************** -->
+                <div class="storm-info">
+                    <label class="flexly" for="rating"> Storm Severity: &nbsp;&nbsp;&nbsp;
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                    </label>
+        
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                </div>
+
+                <div class="storm-info">
+                    <label for="region">Storm Region</label>
+                    <select id="region" name="Region" required>
+                        <option disabled selected value="disabled">Please Select Region</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </div>
+    
+              
+                <!-- Here is the are you in danger spot of the form class="danger-zone" -->
+    
+                <div class="storm-info">
+                    <h4>Are you in the Danger Zone?</h4>
+                    <label for="yes"><input type="radio" name="Danger Zone" id="yes" required>
+                        &nbsp;&nbsp;Yes</label>
+                    <label for="maybe"><input type="radio" name="Danger Zone" id="maybe">
+                        &nbsp;&nbsp;Maybe</label>
+                    <label for="no"><input type="radio" name="Danger Zone" id="no">
+                        &nbsp;&nbsp;No</label>
+                </div>
+    
+    
+                <div class="storm-info">
+                    <textarea name="Additional Comments" placeholder="Additional Comments" rows="6"></textarea>
+                </div>
+    
+                <input id="submit" value="Submit" type="submit">
+               
+    
+    
+            </form>
+
+        </div>
+        
+        
+
+    </main>
+    <footer>
+
+        <!--Start of Contact information-->
+        <section class="contact">
+            <div class="contact-container">
+                <div class="contact-information">
+                    <h3>Contact Information</h3>
+                    <p>Phone: 208-867-5309</p>
+                    <p>Email: donaldtrump@maga.com</p>
+                    <p>Address: 70 W Oneida St, Preston, ID 83263</p>
+                    <div class="social"> <!-- Here is all the logos that link to social media sites-->
+                        <a href="https://www.facebook.com/">
+                        <img
+                            src="images/facebook_icon.png"
+                            alt="Facebook Logo"
+                        />
+                        </a>
+            
+                        <a href="https://www.instagram.com/">
+                        <img
+                            src="images/instagram_icon.png"
+                            alt="Instagram Logo"
+                        />
+                        </a>
+            
+                        <a href="https://www.youtube.com/">
+                        <img
+                            src="images/youtube_icon.png"
+                            alt="Youtube Logo"
+                        />
+                        </a>
+                        <a href="https://www.twitter.com/">
+                            <img
+                                src="images/twitter_icon.png"
+                                alt="Twitter Logo"
+                            />
+                            </a>
+                    </div>    
+                    
+                </div>
+                <div class="contact-map">
+                    <img class="preston-map" src="images/preston-map.jpg"></div>
+                    
+            </div>
+        </section>
+</footer>
+    
+</body>
+<script src="script/storm_center.js"></script>
+<script src="script/ham_banner.js"></script>
+</html>
