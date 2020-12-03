@@ -1,0 +1,682 @@
+/* CORE STYLES************************************* */
+
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+  margin-top: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.header-container {
+  background-color: #da7635;
+  color: white;
+  border-bottom: solid 2px black;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.title {
+  margin-top: 35px;
+}
+.title h3 {
+  margin-bottom: 5px;
+}
+.title p {
+  margin-top: 5px;
+}
+
+.links {
+  display: none;
+  border-top: solid black 2px;
+  padding-top: 15px;
+}
+
+.links.responsive {
+  display: flex;
+  flex-direction: column;
+}
+
+.links li {
+  list-style-type: none;
+  margin: 2px 0px;
+}
+
+.links li a {
+  text-decoration: none;
+}
+
+.links li a.active {
+  border-bottom: white solid 3px;
+}
+
+.white-link {
+  color: white;
+}
+
+.ham {
+  height: 50px;
+  width: 50px;
+  background-color: #d33f49;
+  border: black 1px solid;
+  margin-left: auto;
+  margin: 30px 10px 0px auto;
+}
+.ham-line {
+  background-color: black;
+  height: 2px;
+  width: 40px;
+  margin: 10px 0px 0px 5px;
+  border: none;
+}
+
+.banner {
+  background: pink;
+  text-align: center;
+  color: greenyellow;
+  padding: 20px;
+}
+
+#corona-heading {
+  text-align: center;
+  background-color: #db995a;
+  padding: 10px;
+  border: solid 1px black;
+  max-width: 100%;
+}
+
+/* Mobile ***********************************************************************************/
+@media only screen and (max-width: 599px) {
+  /* MOBILE HOME *************************************************/
+  .hero {
+    /* width: 100%; */
+    height: 300px;
+    background-image: url("../images/home_hero_image.jpg");
+    /* margin: 0 auto; */
+    /* margin-left: 10px;
+      margin-right: 10px; */
+    margin: 10px;
+    border: solid 3px #d33f49;
+  }
+
+  .hero-container {
+    display: grid;
+    /* grid-template-rows: 1fr 1fr; */
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-text {
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .hero-text h1 {
+    margin-top: 0px;
+  }
+
+  .hero-text p {
+    text-align: center;
+    margin: 5px;
+  }
+
+  .hero-text b {
+    text-decoration: underline;
+  }
+
+  #cards {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    /* border: 10px dashed green; */
+  }
+
+  #cards div {
+    text-align: center;
+    padding: 0px;
+  }
+
+  #cards section {
+    border: solid 2px black;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0px;
+    display: grid;
+    grid-template-rows: 1fr;
+    background-color: ghostwhite;
+    /* box-shadow: 0px 5px 10px black; */
+    margin: 5px;
+  }
+
+  #cards img {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  #cards h2 {
+    margin-top: 0px;
+    background-color: #d33f49;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+  }
+  #cards section :nth-child(2) {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+  }
+  .corona-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 0px auto;
+  }
+
+  .corona-cards {
+    display: grid;
+    text-align: center;
+    border: solid 1px black;
+    background-color: ghostwhite;
+    justify-items: center;
+    padding: 10px;
+  }
+
+  .corona-cards img {
+    display: none;
+  }
+
+  .corona-cards h2 {
+    color: red;
+    margin: 0px;
+  }
+  /* MOBILE FOOTER *********************************************/
+  footer {
+    background-color: #da7635;
+    border-top: solid 2px black;
+    margin-top: 10px;
+  }
+
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-map {
+    margin-top: 10px;
+  }
+
+  .social {
+    display: none;
+  }
+}
+/* MOBILE HOME *************************************************/
+.hero {
+  /* width: 100%; */
+  height: 300px;
+  background-image: url("../images/home_hero_image.jpg");
+  /* margin: 0 auto; */
+  /* margin-left: 10px;
+    margin-right: 10px; */
+  margin: 10px;
+  border: solid 3px #d33f49;
+}
+
+.hero-container {
+  display: grid;
+  /* grid-template-rows: 1fr 1fr; */
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  margin: 0 auto;
+}
+
+.hero-text {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.hero-text h1 {
+  margin-top: 0px;
+}
+
+.hero-text p {
+  text-align: center;
+  margin: 5px;
+}
+
+.hero-text b {
+  text-decoration: underline;
+}
+
+#cards {
+  grid-template-columns: 1fr;
+  gap: 5px;
+  /* border: 10px dashed green; */
+}
+
+#cards div {
+  text-align: center;
+  padding: 0px;
+}
+
+#cards section {
+  border: solid 2px black;
+  border-radius: 15px;
+  text-align: center;
+  padding: 0px;
+  display: grid;
+  grid-template-rows: 1fr;
+  background-color: ghostwhite;
+  /* box-shadow: 0px 5px 10px black; */
+  margin: 5px;
+}
+
+#cards img {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+#cards h2 {
+  margin-top: 0px;
+  background-color: #d33f49;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px;
+}
+#cards section :nth-child(2) {
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+}
+.corona-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 0px auto;
+}
+
+.corona-cards {
+  display: grid;
+  text-align: center;
+  border: solid 1px black;
+  background-color: ghostwhite;
+  justify-items: center;
+  padding: 10px;
+}
+
+.corona-cards img {
+  display: none;
+}
+
+.corona-cards h2 {
+  color: red;
+  margin: 0px;
+}
+/* MOBILE FOOTER *********************************************/
+footer {
+  background-color: #da7635;
+  border-top: solid 2px black;
+  margin-top: 10px;
+}
+
+.contact-container {
+  padding: 20px;
+}
+
+.contact-map {
+  margin-top: 10px;
+}
+
+.social {
+  display: none;
+}
+
+/* Medium devices (tablets, 700px and up) *****************************************************/
+@media only screen and (max-width: 999px) and (min-width: 600px) {
+  .hero {
+    /* width: 100%; */
+    height: 300px;
+    background-image: url("../images/home_hero_image.jpg");
+    /* margin: 0 auto; */
+    /* margin-left: 10px;
+      margin-right: 10px; */
+    margin: 10px;
+    border: solid 3px #d33f49;
+  }
+
+  .hero-container {
+    display: grid;
+    /* grid-template-rows: 1fr 1fr; */
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-text {
+    margin: 0 auto;
+    grid-row: 2;
+  }
+
+  .hero-text p {
+    width: 500px;
+    margin: 15px;
+  }
+
+  #cards {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    /* border: 10px dashed green; */
+  }
+
+  #cards div {
+    /* border: yellow solid 3px; */
+    /* display: grid; */
+    text-align: center;
+  }
+
+  #cards section :nth-child(2) {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  #cards section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    border: solid 2px black;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    background-color: ghostwhite;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  #cards section:hover {
+    box-shadow: 0 0 50px#333;
+  }
+
+  #cards :nth-child(2) img {
+    /* border: solid 3px black; */
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #cards :nth-child(2) div {
+    /* border: solid 3px orange; */
+    grid-column: 2;
+  }
+
+  #cards h2 {
+    margin-top: 0px;
+    background-color: #d33f49;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  #cards img {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  #cards h2 {
+    margin-top: 0px;
+    background-color: #d33f49;
+    color: white;
+
+    padding: 10px;
+  }
+
+  .corona-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 5px auto;
+  }
+
+  .corona-cards {
+    display: grid;
+    text-align: center;
+    border: solid 1px black;
+    background-color: ghostwhite;
+    justify-items: center;
+    padding: 10px;
+  }
+
+  .corona-cards img {
+    display: grid;
+    max-width: 90%;
+    margin-top: 10px;
+  }
+
+  .corona-cards h2 {
+    color: red;
+    margin: 0px;
+  }
+  /*Contact us middle view*/
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr minmax(350px, 1fr) 20px minmax(auto, 1fr) 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .contact-map {
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 10px;
+  }
+
+  .contact-information {
+    justify-self: center;
+    grid-column: 4;
+    line-height: 1;
+    align-self: center;
+  }
+
+  .social {
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-self: center;
+  }
+
+  .social img {
+    display: grid;
+    margin: 2px;
+    width: auto;
+    max-width: 40px;
+    margin: 0 auto;
+  }
+}
+
+/** Full screen  ****************************************************************************/
+
+@media only screen and (min-width: 1000px) {
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  img {
+    width: 100%;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .ham {
+    display: none;
+  }
+
+  .hero {
+    /* width: 100%; */
+    height: 300px;
+    background-image: url("../images/home_hero_image.jpg");
+    /* margin: 0 auto; */
+    /* margin-left: 10px;
+      margin-right: 10px; */
+    margin: 10px;
+    border: solid 3px #d33f49;
+  }
+
+  .hero-container {
+    display: grid;
+    /* grid-template-rows: 1fr 1fr; */
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-text {
+    margin: 0 auto;
+    grid-row: 2;
+  }
+
+  .hero-text p {
+    width: 500px;
+    margin: 15px;
+  }
+
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    /* border: dashed 5px green; */
+    margin-bottom: 5px;
+  }
+
+  #cards div {
+    text-align: center;
+    padding: 0px;
+  }
+
+  #cards section {
+    border: solid 2px black;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0px;
+    display: grid;
+    grid-template-rows: 1fr;
+    background-color: ghostwhite;
+    /* box-shadow: 0px 5px 10px black; */
+    margin: 5px;
+  }
+
+  #cards section:hover {
+    box-shadow: 0 0 50px#333;
+  }
+
+  #cards section img {
+    /* border: dashed 3px black; */
+    justify-self: end;
+  }
+
+  #cards section :nth-child(2) {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  #cards img {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  #cards h2 {
+    margin-top: 0px;
+    background-color: #d33f49;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+  }
+
+  .corona-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 5px auto;
+  }
+
+  .corona-cards {
+    display: grid;
+    text-align: center;
+    border: solid 1px black;
+    background-color: ghostwhite;
+    justify-items: center;
+    padding: 10px;
+  }
+
+  .corona-cards img {
+    display: grid;
+    max-width: 90%;
+    margin-top: 10px;
+  }
+
+  .corona-cards h2 {
+    color: red;
+    margin: 0px;
+  }
+
+  /*Contact us wide view*/
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr minmax(350px, 1fr) 20px minmax(auto, 1fr) 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  .contact-map {
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 10px;
+  }
+  .contact-information {
+    justify-self: center;
+    grid-column: 4;
+    line-height: 1;
+    align-self: center;
+  }
+  .social {
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-self: center;
+  }
+
+  .social img {
+    display: grid;
+    margin: 2px;
+    width: auto;
+    max-width: 50px;
+    margin: 0 auto;
+  }
+}
