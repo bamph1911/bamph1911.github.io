@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/prestonW06.css" />
+    <script src="js/ham-button.js"></script>
+    <link rel="icon" href="images/Kairosview copy.png">
+    
+    <title>Preston</title>
+</head>
+<body>
+    <main>
+        <section id="header">
+            <div class="header-container">
+              <div class="logo">
+                <img src="images/Kairosview copy.png" />
+                <div class="title">
+                    <h3>Kairosview</h3>
+                    <p>Rain or shine <br>We are right 100% of the time</p>
+                </div>
+
+                <div class="ham">
+                    <div class="ham-line"></div>
+                    <div class="ham-line"></div>
+                    <div class="ham-line"></div>
+                </div>
+              </div>
+
+              <div>
+                <ul class="links navigation">
+                  <li><a href="index.html" class="white-link">Home</a></li>
+                  <li><a href="preston.html" class="white-link">Preston</a></li>
+                  <li><a href="sodasprings.html" class="white-link active">Soda Springs</a></li>
+                  <li><a href="fishhaven.html" class="white-link">Fish Haven</a></li>
+                  <li><a href="storm_center.html" class="white-link">Storm Center</a></li>
+                  <li><a href="gallery.html" class="white-link">Gallery</a></li>
+                </ul>
+              </div>
+            </div>
+        </section>
+      
+          <div class="banner" id="banner">free pancakes <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">click here</a></div>
+      
+        <!--Start of Hero section with weather summary -->
+        <div class="content">
+            <section class="hero">
+                <div class="hero-container">
+                    <picture class='hero-image'>
+                        <img src='images/sodasprings.jpg' alt='hero-img'>
+                    </picture>
+                    <div class="weather-summary">
+                        <h3>Summary</h3>
+                        <p>Currently: <span id="current"></span></p>
+                        <p>High: <span id="high"> </span> &#8457</p>
+                        <p>Wind Chill: <span id="windChill"></span> &#8457</p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>Wind Speed: <span id="windSpeed"></span> MPH</p>
+                        
+                    </div>
+                </div>  
+            </section>
+    
+            <!--Start of 5 day forcast-->
+            <section class="five-day-forcast">
+                <div class="five-day-forcast-heading">
+                    <h3>Five Day Forcast</h3>
+                </div>
+                
+
+                <!--This container disappears in mobile view -->
+                <div class="forcast-container" id="forcast-container">
+                  <!-- <div class="forcast-card"></div>
+                  <div class="forcast-card"></div>
+                  <div class="forcast-card"></div>
+                  <div class="forcast-card"></div>
+                  <div class="forcast-card"></div> -->
+                </div>
+            </section>
+            <section id="event-card">
+                <h3>Upcoming Events</h3>
+                <hr>
+            </section>
+            <!--Stat of article title and photo-->
+            <section class="blog">
+                <div class="article-container">
+                    <div class="article-content">
+                        <h3>Wrangler jeans are not just for cowboys anymore
+                        </h3>
+                        <p>Rodeo Ben started the trend for Wrangler jeans when he 
+                            designed and tailored the 13MWZ. This durable and quality jean was 
+                            tested by rodeo stars Jim Shoulders, Bill Linderman, and Freckles 
+                            Brown while they starred in rodeo shows around the country.
+                            In 1949, the Wrangler jean became very popular after the Rodeo Championship
+                             and grew into the number 1 jean for western wear. As a matter of fact even later
+                              in 1974, Wrangler Jeans became 'Official Jeans of the Pro Rodeo Cowboys Association'.
+                        </p>
+                        <p>
+                            Many people love the shrink in water method that gives Wrangler jeans a personal fit. 
+                            Since, these jeans are perfect for wearing even scuba diving you can jump in river and let them dry to achieve
+                             that personal fit. If you are not that adventurous and don’t wish to wear wet jeans you can easily throw them
+                              in the clothes dryer and take them out when they are still damp. 
+                        </p>
+                    </div>
+                    
+                    <div class="article-image">
+                        <img src="images/preston-article-image.jpg"/>
+                    </div> 
+                </div>
+                
+            </section>
+    
+    
+        </div>
+        
+
+    </main>
+    <footer>
+
+            <!--Start of Contact information-->
+            <section class="contact">
+                <div class="contact-container">
+                    <div class="contact-information">
+                        <h3>Contact Information</h3>
+                        <p>Phone: 208-867-5309</p>
+                        <p>Email: donaldtrump@maga.com</p>
+                        <p>Address: 70 W Oneida St, Preston, ID 83263</p>
+                        <div class="social"> <!-- Here is all the logos that link to social media sites-->
+                            <a href="https://www.facebook.com/">
+                            <img
+                                src="images/facebook_icon.png"
+                                alt="Facebook Logo"
+                            />
+                            </a>
+                
+                            <a href="https://www.instagram.com/">
+                            <img
+                                src="images/instagram_icon.png"
+                                alt="Instagram Logo"
+                            />
+                            </a>
+                
+                            <a href="https://www.youtube.com/">
+                            <img
+                                src="images/youtube_icon.png"
+                                alt="Youtube Logo"
+                            />
+                            </a>
+                            <a href="https://www.twitter.com/">
+                                <img
+                                    src="images/twitter_icon.png"
+                                    alt="Twitter Logo"
+                                />
+                                </a>
+                        </div>    
+                        
+                    </div>
+                    <div class="contact-map">
+                        <img class="preston-map" src="images/preston-map.jpg"></div>
+                        
+                </div>
+            </section>
+    </footer>
+    <script src="js/weather_summary.js"></script>
+    <script src="js/town_events.js"></script>
+</body>
+</html>
